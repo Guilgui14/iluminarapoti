@@ -13,6 +13,8 @@
     --radius:14px;
     --max:1180px;
   }
+
+  
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
@@ -57,10 +59,12 @@
  
   /* header */
   header{
-    position:sticky;top:0;z-index:100;
-    background:rgba(11,18,32,0.9);
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(0, 0, 0, 0.9);
     backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
+    border-bottom:2px solid var(--line);
   }
   .nav{
     display:flex;align-items:center;justify-content:space-between;
@@ -68,7 +72,12 @@
     max-width:var(--max);margin:0 auto;
   }
   .logo{
-    display:flex;align-items:center;gap:10px;
+    display:flex;
+    width: 100px;
+    flex-direction:column;
+    margin-left: -30px;
+    
+
   }
   .logo-bolt{
     width:30px;height:30px;
@@ -364,11 +373,22 @@
   footer .flinks{display:grid;gap:10px;}
   footer .flinks a{font-size:14px;color:var(--text-dim);transition:color .2s;}
   footer .flinks a:hover{color:var(--volt);}
+
   .foot-bottom{
-    display:flex;justify-content:space-between;align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     padding-top:22px;border-top:1px solid var(--line);
     font-size:12px;color:var(--text-dim);flex-wrap:wrap;gap:10px;
   }
+
+  .logocreater{
+    width: 130px;
+    height: 130px;
+    cursor:pointer;
+
+  }
+
  
   /* reveal */
   .reveal-init{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
