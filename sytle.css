@@ -1,7 +1,7 @@
 :root{
-    --bg:#0B1220;
-    --bg-panel:#101B2E;
-    --bg-panel-2:#16233A;
+    --bg:#8b6a00b8;
+    --bg-panel:#2873f3;
+    --bg-panel-2:#003f7acb;
     --line:#2A3A54;
     --text:#F1EDE4;
     --text-dim:#9FADC4;
@@ -67,9 +67,12 @@
     border-bottom:2px solid var(--line);
   }
   .nav{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:16px 24px;
-    max-width:var(--max);margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1px 4px;
+    max-width:var(--max);
+    margin:0 auto;
   }
   .logo{
     display:flex;
@@ -90,15 +93,8 @@
     letter-spacing:0.02em;
   }
   .logo-text span{color:var(--volt);}
-  .logo-sub{
-    display:block;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:9.5px;
-    letter-spacing:0.12em;
-    color:var(--text-dim);
-    text-transform:uppercase;
-    margin-top:-2px;
-  }
+
+  
   nav.links{display:flex;gap:32px;}
   nav.links a{
     font-size:13px;
@@ -154,7 +150,8 @@
     align-items:center;
   }
   .eyebrow{
-    display:inline-flex;align-items:center;gap:8px;
+    display:inline-flex;
+    align-items:center;gap:8px;
     font-family:'IBM Plex Mono',monospace;
     font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;
     color:var(--live);
@@ -257,7 +254,10 @@
   /* sections generic */
   section{padding:90px 0;}
   .section-head{
-    display:flex;justify-content:space-between;align-items:flex-end;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
     margin-bottom:44px;flex-wrap:wrap;gap:16px;
   }
   .section-head .eyebrow{margin-bottom:8px;color:var(--copper);}
