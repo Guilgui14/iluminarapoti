@@ -1,7 +1,7 @@
 :root{
-    --bg:#8b6a00b8;
-    --bg-panel:#2873f3;
-    --bg-panel-2:#003f7acb;
+    --bg:rgb(86, 86, 86);
+    --bg-panel:#f3e528;
+    --bg-panel-2:#f1ed00cb;
     --line:#2A3A54;
     --text:#F1EDE4;
     --text-dim:#9FADC4;
@@ -185,7 +185,6 @@
     position:relative;
   }
   .panel::before{
-    content:"QUADRO DE DISTRIBUIÇÃO";
     position:absolute;top:-11px;left:20px;
     background:var(--bg-panel);
     padding:0 8px;
@@ -193,17 +192,20 @@
     font-size:10px;letter-spacing:0.1em;color:var(--text-dim);
   }
   .breaker-grid{
-    display:grid;grid-template-columns:1fr 1fr;gap:12px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
   }
   .breaker{
-    background:var(--bg-panel-2);
+    background:rgb(27, 27, 3);
     border:1px solid var(--line);
     border-radius:8px;
     padding:14px 14px 12px;
     cursor:pointer;
     transition:border-color .2s, transform .15s;
   }
-  .breaker:hover{border-color:var(--volt-dim);transform:translateY(-2px);}
+  .breaker:hover{border-color:var(--volt-dim);
+    transform:translateY(-2px) translateX(-2px);}
   .breaker .code{
     font-family:'IBM Plex Mono',monospace;
     font-size:10px;color:var(--text-dim);
